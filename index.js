@@ -15,6 +15,9 @@ mongoose.connect('mongodb+srv://Umesh123:Umesh123@cluster0.moi8u.mongodb.net/exp
     console.log("mongodb connected");
 })
 
+app.get('/',(req,res)=>{
+    res.send("working")
+})
 // sending api
 app.use('/api',require('./api/index'))
 
